@@ -30,24 +30,35 @@ ul {
 }
 
 .relative { 
-    position: ; 
-    background: #ffd700; 
+    position: relative;  
+    background: #ffd700;
+    left: 90px;
+    top: 40px;
+
 }
 
 .absolute {
-    position: ;
+    position: absolute;
     background: #ff7b00;
+    bottom: 10px;
+    top: 10px;
+    z-index: -400;
 }
 
 .fixed {
-    position: ;
+    position: fixed;
+    z-index: -4;
+    top: 10px;
+    left: 10px;
     background: #ff3b3b;
-    z-index: 10;
+
+   
 }
 
 .sticky {
-    position: ;
+    position: sticky;
     background: #7fff00;
+    top: 5px;
 }
 
 /* ====== Imagens ====== */
@@ -67,8 +78,9 @@ ul {
 }
 
 .img-container .label {
-    position: ;
-    
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
     background: rgba(0,0,0,0.6);
     padding: 10px 15px;
     border-radius: 8px;
