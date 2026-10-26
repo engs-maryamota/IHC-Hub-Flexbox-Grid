@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox - Aula de CSS</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+     <header>
+    <h1>⋆. 𐙚 ˚𝑮𝒓𝒊𝒅 - 𝑨𝒖𝒍𝒂 𝒅𝒆 𝑪𝑺𝑺₊˚⊹♡</h1>
+    <a href="index.html">⬅ Voltar ao Hub</a>
+  </header>
+  
+     <main>
+
+    <section>
+      <h2>𑣲⋆｡˚𝐎 𝐪𝐮𝐞 𝐞́ 𝐨 𝐆𝐫𝐢𝐝?⋆˙⟡</h2>
+      <p>
+        O CSS Grid Layout é um sistema de layout bidimensional que permite criar layouts complexos e responsivos de forma mais simples e eficiente. Ele organiza os elementos em linhas e colunas, facilitando o posicionamento e o dimensionamento dos itens dentro de um contêiner.
+      </p>
+      <p>𝓞𝓼 𝓿𝓪𝓵𝓸𝓻𝓮𝓼 𝓹𝓻𝓲𝓷𝓬𝓲𝓹𝓪𝓲𝓼 𝓼𝓪̃𝓸:</p>
+      <ul>
+        <li><strong> ˚˖𓍢ִ໋❀ grid-template-columns</strong> — define o número e o tamanho das colunas;</li>
+        <li><strong>˚˖𓍢ִ໋❀ grid-template-rows</strong> — define o número e o tamanho das linhas;</li>
+        <li><strong>˚˖𓍢ִ໋❀ grid-gap</strong> — define o espaçamento entre as linhas e colunas;</li>
+        <li><strong>˚˖𓍢ִ໋❀ grid-area</strong> — define a área ocupada por um item no grid;</li>
+        <li><strong>˚˖𓍢ִ໋❀ justify-items</strong> — alinha os itens horizontalmente dentro de suas células;</li>
+        <li><strong>˚˖𓍢ִ໋❀ align-items</strong> — alinha os itens verticalmente dentro de suas células.</li>
+      </ul>
+    </section>
+    <section id="exemplo-pratico1">
+      <h2>𑣲⋆｡˚Exemplo Prático 1: grid-template-columns (Repeat & Minmax)⋆˙⟡</h2>
+      <h3 class="texto-flex">˚˖𓍢ִ໋❀ Layout Responsivo Automático</h3>
+
+      <div class="grid-container-auto">
+        <article class="grid-item">Card 1</article>
+        <article class="grid-item">Card 2</article>
+        <article class="grid-item">Card 3</article>
+        <article class="grid-item">Card 4</article>
+      </div>
+
+      <p class="texto-descricao">
+        ₊˚⊹♡ Utilizando <strong>repeat(auto-fit, minmax(200px, 1fr))</strong>, os elementos se redistribuem automaticamente na tela conforme o espaço disponível.
+      </p>
+    </section>
+
+    <section id="exemplo-pratico2">
+      <h2>𑣲⋆｡˚Exemplo Prático 2: Alinhamento no Grid⋆˙⟡</h2>
+      <h3 class="texto-flex">˚˖𓍢ִ໋❀ justify-items & align-items</h3>
+
+      <div class="grid-container-align">
+        <article class="grid-item">Item 1</article>
+        <article class="grid-item">Item 2</article>
+        <article class="grid-item">Item 3</article>
+        <article class="grid-item">Item 4</article>
+      </div>
+
+      <p class="texto-descricao">
+        ₊˚⊹♡ As propriedades <strong>justify-items</strong> e <strong>align-items</strong> controlam o alinhamento horizontal e vertical dos itens dentro de suas células no grid.
+      </p>
+    </section>
+
+    <section id="exemplo-pratico3">
+      <h2>𑣲⋆｡˚Exemplo Prático 3: Expansão com grid-column & grid-row⋆˙⟡</h2>
+      <h3 class="texto-flex">˚˖𓍢ִ໋❀ Ocupando Múltiplas Células (Span)</h3>
+
+      <div class="grid-container-span">
+        <article class="grid-item item-destaque">Destaque (Span 2 Colunas)</article>
+        <article class="grid-item">Item 2</article>
+        <article class="grid-item">Item 3</article>
+        <article class="grid-item item-lateral">Lateral (Span 2 Linhas)</article>
+        <article class="grid-item">Item 5</article>
+      </div>
+
+      <p class="texto-descricao">
+        ₊˚⊹♡ Com <strong>grid-column: span 2</strong> e <strong>grid-row: span 2</strong>, um item pode se expandir para ocupar mais de uma coluna ou linha.
+      </p>
+    </section>
+
+    <section id="exemplo-pratico4">
+      <h2>𑣲⋆｡˚Exemplo Prático 4: grid-template-areas⋆˙⟡</h2>
+      <h3 class="texto-flex">˚˖𓍢ִ໋❀ Estrutura de Layout Completa</h3>
+
+      <div class="grid-container-areas">
+        <header class="grid-item area-header">Topo (Header)</header>
+        <aside class="grid-item area-sidebar">Menu (Sidebar)</aside>
+        <main class="grid-item area-content">Conteúdo Principal</main>
+        <footer class="grid-item area-footer">Rodapé (Footer)</footer>
+      </div>
+
+      <p class="texto-descricao">
+        ₊˚⊹♡ A propriedade <strong>grid-template-areas</strong> permite nomear seções do layout e desenhar a estrutura visualmente pelo CSS.
+      </p>
+    </section>
+
+    <section id="teste-grid">
+      <h2>𑣲⋆｡˚ Área de Testes⋆˙⟡</h2>
+      <p class="texto-descricao">
+        ₊˚⊹♡ Altere as classes no arquivo <strong>grid.css</strong> para ver como o CSS afeta cada elemento e crie seus próprios layouts!
+      </p>
+
+      <div class="teste-container">
+        <div class="grid-item">Teste 1</div>
+        <div class="grid-item">Teste 2</div>
+        <div class="grid-item">Teste 3</div>
+        <div class="grid-item">Teste 4</div>
+        <div class="grid-item">Teste 5</div>
+        <div class="grid-item">Teste 6</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Prof. Dionatan Inhoato Markiu — © 2025</p>
+    <p>Editado pela aluna Marya Eduarda dos Santos Mota</p>
+  </footer>
+
+</body>
+</html>

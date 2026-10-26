@@ -1,0 +1,166 @@
+body {
+  background: linear-gradient(135deg, #221b2e, #312642);
+  color: #F4F0DD;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  padding: 30px 20px;
+  text-align: center;
+  background: #322348;
+  box-shadow: 0 4px 15px rgba(15, 10, 25, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #A88AED;
+}
+
+header a {
+  display: inline-block;
+  background-color: #A6C261;
+  color: #2A2533;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+header a:hover {
+  background-color: #A88AED;
+  color: #F4F0DD;
+}
+
+main {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 138, 237, 0.25);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+  color: #A88AED;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+section p {
+  color: #F4F0DD;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+section ul {
+  padding-left: 20px;
+}
+
+section ul li {
+  color: #F4F0DD;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+section ul li strong {
+  color: #A6C261;
+}
+
+.texto-flex {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #A88AED;
+}
+
+.texto-descricao {
+  font-family: Arial, sans-serif;
+  color: #F4F0DD;
+  margin-top: 15px;
+  line-height: 1.5;
+}
+
+.flex-item {
+  background-color: #322348;
+  border: 1px solid #A88AED;
+  color: #F4F0DD;
+  padding: 20px;
+  text-align: center;
+  border-radius: 6px;
+}
+
+#exemplo-pratico1 .flex-container-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
+}
+
+#exemplo-pratico1 .flex-container-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+#exemplo-pratico2 .flex-container-justify {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(168, 138, 237, 0.15);
+  border-radius: 8px;
+}
+
+#exemplo-pratico3 .flex-container-align {
+  display: flex;
+  align-items: center;
+  min-height: 140px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(168, 138, 237, 0.15);
+  border-radius: 8px;
+}
+
+.item-alto {
+  padding: 35px 20px;
+}
+
+#exemplo-pratico4 .flex-container-individual {
+  display: flex;
+  min-height: 160px;
+  gap: 10px;
+  padding: 10px;
+  background-color: rgba(168, 138, 237, 0.15);
+  border-radius: 8px;
+}
+
+.item-topo {
+  align-self: flex-start;
+}
+
+.item-centro {
+  align-self: center;
+}
+
+.item-fim {
+  align-self: flex-end;
+}
